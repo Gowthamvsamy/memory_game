@@ -111,7 +111,15 @@ window.onload = function () {
 
                             const winnertext = winner.appendChild(document.createElement("p"));
                             winnertext.textContent = "You won the game!";
-                            winnertext.className = "text-red-400 text-3xl mb-14";
+                            winnertext.className = "text-red-400 text-3xl";
+
+                            const ct = winner.appendChild(document.createElement("p"));
+                            ct.textContent = `Count: ${count}`;
+                            ct.className = "text-blue-400 text-xl my-10";
+
+                            const time = winner.appendChild(document.createElement("p"));
+                            time.textContent = `Time: ${minutes} : ${seconds}`;
+                            time.className = "text-blue-400 text-xl mb-14";
 
                             const back = winner.appendChild(document.createElement("button"));
                             const btn = back.appendChild(document.createElement("a"));
