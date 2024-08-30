@@ -22,8 +22,14 @@
     width: 100%;
 }
 
+@media screen and (max-width:640px) {
+    .bg-img {
+        background-size: cover;
+    }
+}
+
 .frontPage {
-    @apply bg-img flex justify-center items-center flex-col
+    @apply bg-img flex justify-center items-center flex-col border
 }
 
 .frontPagebtn {

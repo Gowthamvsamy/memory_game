@@ -10,7 +10,7 @@ window.onload = function () {
     timer_count.className = "timer_count";
 
     const timerdiv1 = timer_count.appendChild(document.createElement("div"));
-    timerdiv1.className = "flex justify-between gap-5";
+    timerdiv1.className = "flex justify-between gap-4";
 
     const back = timerdiv1.appendChild(document.createElement("button"));
     const btn = back.appendChild(document.createElement("a"));
@@ -39,7 +39,7 @@ window.onload = function () {
     });
 
     const timerdiv2 = timer_count.appendChild(document.createElement("div"));
-    timerdiv2.className = "flex justify-between gap-5";
+    timerdiv2.className = "flex justify-between gap-4";
 
     const timer = timerdiv2.appendChild(document.createElement("p"));
     timer.textContent = `Time : ${minutes} : ${seconds}`;
