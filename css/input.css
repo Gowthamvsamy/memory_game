@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+
+.flipBox {
+    transform: rotateY(360deg);
+}
+
+.flipBoxre {
+    transform: rotateY(360deg);
+}
+
+.bg-img {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.436), rgba(255, 255, 255, 0.436)), url(../images/wall.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+.frontPage {
+    @apply bg-img flex justify-center items-center flex-col
+}
+
+.frontPagebtn {
+    @apply px-6 py-3 mt-14 bg-cyan-500 text-2xl rounded-full
+}
+
+.timer_count {
+    @apply flex justify-between w-full gap-5 p-3 items-center
+}
+
+.backBtn {
+    @apply border px-3 py-1 rounded-md bg-neutral-400 focus:hover:bg-neutral-500 hover:bg-neutral-500 text-white
+}
+
+.reset {
+    @apply border px-3 py-1 rounded-md bg-red-400 focus:hover:bg-red-500 hover:bg-red-500 text-white
+}
+
+.winner {
+    @apply absolute z-10 bg-white h-screen w-full flex justify-center items-center flex-col
+}
